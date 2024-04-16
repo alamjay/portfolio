@@ -17,8 +17,6 @@
 </head>
 
 <body class="bg-[#202124]">
-
-  <!-- Add your site or application content here -->
   <div class="w-full text-white">
     <div class="mx-auto max-w-screen-md p-4">
       <div class="flex flex-col gap-y-12">
@@ -27,15 +25,23 @@
           <h1 class="text-5xl font-serif font-bold">Hi, I'm Jahangir Alam.</h1>
           <h2 class="text-4xl font-serif font-semibold text-blue-400">Full-Stack Developer</h2>
         </div>
-        <div class="flex items-center gap-x-8">
-          <div class="w-1/2 pb-40">
+        <div class="sm:flex items-center gap-x-8">
+          <div class="flex flex-col gap-y-8 sm:w-1/2 sm:pb-48">
             <p>
               I'm a full-stack developer with over 4 years of progressive experience in software development and testing.
               I'm a car fanatic, love to game and have a passion in tech.
             </p>
+            <div class="flex w-full justify-center sm:justify-start">
+              <div class="text-center sm:text-start pr-8 border-r-2 border-white w-1/2 sm:w-auto">
+                <a href="#projects" class="text-xl font-bold text-blue-400">Projects</a>
+              </div>
+              <div class="text-center sm:text-start pl-8 w-1/2 sm:w-auto">
+                <a href="#contact" class="text-xl font-bold text-blue-400">Contact</a>
+              </div>
+            </div>
           </div>
-          <div class="w-1/2 p-4 border border-4 border-blue-400">
-            <h3 class="text-xl underline decoration-blue-400 font-semibold">Tech Stack</h3>
+          <div class="w-full sm:w-1/2 p-4 mt-8 sm:mt-0 border border-4 shadow-2xl rounded border-blue-400">
+            <h3 class="text-center text-xl underline decoration-blue-400 font-semibold">Tech Stack</h3>
             <div class="flex flex-col gap-y-2 pt-4">
               <div class="flex items-center gap-x-4">
                 <span class="w-32">HTML/CSS</span>
@@ -56,6 +62,12 @@
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
+                <span class="w-32">Cypress</span>
+                <div class="w-full rounded bg-gray-700 h-4">
+                  <div class="w-10/12 rounded h-4 bg-blue-400"></div>
+                </div>
+              </div>
+              <div class="flex items-center gap-x-4">
                 <span class="w-32">TailwindCSS</span>
                 <div class="w-full rounded bg-gray-700 h-4">
                   <div class="w-9/12 rounded h-4 bg-blue-400"></div>
@@ -68,15 +80,15 @@
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
-                <span class="w-32">Python</span>
-                <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-8/12 rounded h-4 bg-blue-400"></div>
-                </div>
-              </div>
-              <div class="flex items-center gap-x-4">
                 <span class="w-32">MySQL</span>
                 <div class="w-full rounded bg-gray-700 h-4">
                   <div class="w-9/12 rounded h-4 bg-blue-400"></div>
+                </div>
+              </div>
+              <div class="flex items-center gap-x-4">
+                <span class="w-32">Python</span>
+                <div class="w-full rounded bg-gray-700 h-4">
+                  <div class="w-8/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
@@ -94,53 +106,119 @@
             </div>
           </div>
         </div>
-        <section>
-          <h3 class="text-white text-3xl font-serif font-semibold py-4">Projects</h3>
+        <section id="projects">
+          <h3 class="flex justify-center text-white text-3xl font-serif font-semibold pt-4 pb-8 underline underline-offset-8 decoration-4 decoration-blue-400">Projects</h3>
           <div class="flex w-full gap-x-4">
-            <div class="h-[386px] flex flex-col shadow-lg rounded bg-gray-700">
-              <div class="h-[150px] w-full rounded-t bg-white">
-              </div>
-              <div class="p-4">
-                <h4 class="text-white text-xl font-semibold font-serif pb">Tic Tac Toe</h4>
-                <p>Dive into the nostalgic gameplay of X's and O's, but with a sleek and user-friendly interface that makes every move intuitive and enjoyable</p>
-                <div class="flex py-2 gap-x-2">
-                  <div class="px-4 py rounded bg-blue-500">
-                    <span>React</span>
-                  </div>
-                  <div class="px-4 py rounded bg-blue-500">
-                    <span>Tailwind</span>
-                  </div>
+            <div class="w-1/2 h-[386px] flex flex-col shadow-lg rounded bg-gray-700">
+              <div class="h-[150px] w-full rounded-t bg-white"></div>
+              <div class="h-[236px] flex flex-col justify-between p-4">
+                <div>
+                  <h4 class="text-white text-xl font-semibold font-serif pb">Tic Tac Toe</h4>
+                  <p class="text-wrap max-h-32 overflow-hidden text-ellipsis">Dive into the nostalgic gameplay of X's and O's, but with a sleek and user-friendly interface that makes every move intuitive and enjoyable</p>
                 </div>
-                <div class="flex pt-4 gap-x-4">
-                  <div class="w-1/2">
-                    <a href="#">Github</a>
-                    <a href="#">Preview</a>
+                <div>
+                  <div class="hidden sm:flex flex-col sm:flex-row justify-end py-2 gap-x-2 gap-y-2 sm:gap-y-0">
+                    <div class="px-4 py rounded bg-blue-500">
+                      <span>React</span>
+                    </div>
+                    <div class="px-4 py rounded bg-blue-500">
+                      <span>Tailwind</span>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="h-[386px] flex flex-col shadow-lg rounded bg-gray-700">
-              <div class="h-[150px] w-full rounded-t bg-white">
-              </div>
-              <div class="p-4">
-                <h4 class="text-white text-xl font-semibold font-serif pb">Tic Tac Toe</h4>
-                <p>Dive into the nostalgic gameplay of X's and O's, but with a sleek and user-friendly interface that makes every move intuitive and enjoyable</p>
-                <div class="flex py-2 gap-x-2">
-                  <div class="px-4 py rounded bg-blue-500">
-                    <span>React</span>
-                  </div>
-                  <div class="px-4 py rounded bg-blue-500">
-                    <span>Tailwind</span>
-                  </div>
-                </div>
-                <div class="flex pt-4 gap-x-4">
-                  <div class="w-1/2">
-                    <a href="#">Github</a>
-                    <a href="#">Preview</a>
+                  <div class="flex border-t divide-x sm:pt-4 pt-2 justify-between items-center text-center">
+                    <div class="flex justify-center w-1/2">
+                      <a class="font-bold" href="https://github.com/alamjay/tic-tac-toe">
+                        <span class="hidden sm:block">Github</span>
+                        <img src="img/github.svg" class="flex justify-center sm:hidden h-7" />
+                      </a>
+                    </div>
+                    <div class="flex justify-center w-1/2">
+                      <a class="font-bold" href="https://github.com/alamjay/tic-tac-toe">
+                        <span class="hidden sm:block">Preview</span>
+                        <img src="img/visibility.svg" class="sm:hidden h-8" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="w-1/2 h-[386px] flex flex-col shadow-lg rounded bg-gray-700">
+              <div class="h-[150px] w-full rounded-t bg-white">
+              </div>
+              <div class="h-[236px] flex flex-col justify-between p-4">
+                <div>
+                  <h4 class="text-white text-xl font-semibold font-serif pb">BICC Harlow</h4>
+                  <p>a small community mosque with an aim to serve the muslim community in Harlow Town</p>
+                </div>
+                <div>
+                  <div class="hidden sm:flex justify-end py-2 gap-x-2">
+                    <div class="px-4 py rounded bg-blue-500">
+                      <span>WordPress</span>
+                    </div>
+                    <div class="px-4 py rounded bg-blue-500">
+                      <span>Bootstrap</span>
+                    </div>
+                  </div>
+                  <div class="flex sm:pt-4 pt-2 border-t gap-x-4 justify-center items-center text-center">
+                    <a class="font-bold" href="https://biccharlow.co.uk/">
+                      <span class="hidden sm:block">Preview</span>
+                      <img src="img/visibility.svg" class="sm:hidden h-8" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full pt-4 gap-x-4">
+            <div class="w-1/2 h-[386px] flex flex-col shadow-lg rounded bg-gray-700">
+              <div class="h-[150px] w-full rounded-t bg-white">
+              </div>
+              <div class="h-[236px] flex flex-col justify-between p-4">
+                <div>
+                  <h4 class="text-white text-xl font-semibold font-serif pb">Moments Capture</h4>
+                  <p>A place to upload pictures and videos for those special moments.</p>
+                </div>
+                <div>
+                  <div class="hidden sm:flex justify-end py-2 gap-x-2">
+                    <div class="px-4 py rounded bg-blue-500">
+                      <span>React</span>
+                    </div>
+                    <div class="px-4 py rounded bg-blue-500">
+                      <span>Tailwind</span>
+                    </div>
+                    <div class="px-4 py rounded bg-blue-500">
+                      <span>Firebase</span>
+                    </div>
+                  </div>
+                  <div class="flex border-t sm:pt-4 pt-2 gap-x-4 justify-center items-center text-center">
+                    <a class="font-bold" href="https://momentscapture.co.uk/">
+                      <span class="hidden sm:block">Preview</span>
+                      <img src="img/visibility.svg" class="sm:hidden h-8" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/2">
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <h3 class="flex justify-center text-white text-3xl font-serif font-semibold pt-4 pb-8 underline underline-offset-8 decoration-4 decoration-blue-400">Contact</h3>
+          <div class="flex justify-center gap-x-4">
+            <a href="mailto:contact@jahangiralam.me" class="flex pointer justify-center items-center p-4 rounded-full bg-gray-600 hover:bg-gray-700 shadow-lg transition-colors duration-300 ease-out">
+              <img class="h-6" src="img/mail.svg" />
+            </a>
+            <a href="https://www.linkedin.com/in/jay-alam/" class="flex pointer justify-center items-center p-4 rounded-full bg-gray-600 hover:bg-gray-700 shadow-lg transition-colors duration-300 ease-out">
+              <img class="h-6" src="img/linkedIn.svg" />
+            </a>
+            <a href="https://github.com/alamjay" class="flex pointer justify-center items-center p-4 rounded-full bg-gray-600 hover:bg-gray-700 shadow-lg transition-colors duration-300 ease-out">
+              <img class="h-6" src="img/github.svg" />
+            </a>
+          </div>
+
+          <div class="flex pt-8 justify-center w-full text-gray-300 text-sm">
+            © Jahangir Alam
           </div>
         </section>
       </div>
