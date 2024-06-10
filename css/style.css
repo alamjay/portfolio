@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes slideFromLeftAnimation80 {
+  from {width: 0}
+  to {width: 83%}
+}
+
+@keyframes slideFromLeftAnimation75 {
+  from {width: 0}
+  to {width: 75%}
+}
+
+@keyframes slideFromLeftAnimation66 {
+  from {width: 0}
+  to {width: 66%}
+}
+
+@keyframes slideFromLeftAnimation58 {
+  from {width: 0}
+  to {width: 58%}
+}
+
+.slide-from-left-80 {
+  animation-name: slideFromLeftAnimation80;
+  animation-duration: 1s;
+}
+
+.slide-from-left-75 {
+  animation-name: slideFromLeftAnimation75;
+  animation-duration: 1.25s;
+}
+
+.slide-from-left-66 {
+  animation-name: slideFromLeftAnimation66;
+  animation-duration: 1.5s;
+}
+
+.slide-from-left-58 {
+  animation-name: slideFromLeftAnimation58;
+  animation-duration: 1.75s;
+}
