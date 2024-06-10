@@ -22,11 +22,11 @@
       <div class="flex flex-col gap-y-12">
         <img height="50" width="50" src="img/JA_Logo.png" />
         <div class="flex flex-col gap-y-4">
-          <h1 class="text-5xl font-serif font-bold">Hi, I'm Jahangir Alam.</h1>
-          <h2 class="text-4xl font-serif font-semibold text-blue-400">Full-Stack Developer</h2>
+          <h1 class="animate-fadeIn text-5xl font-serif font-bold">Hi, I'm Jahangir Alam.</h1>
+          <h2 class="animate-fadeIn text-4xl font-serif font-semibold text-blue-400">Full-Stack Developer</h2>
         </div>
         <div class="sm:flex items-center gap-x-8">
-          <div class="flex flex-col gap-y-8 sm:w-1/2 sm:pb-48">
+          <div class="animate-fadeIn flex flex-col gap-y-8 sm:w-1/2 sm:pb-48">
             <p>
               I'm a full-stack developer with over 4 years of progressive experience in software development and testing.
               I'm a car fanatic, love to game and have a passion in tech.
@@ -46,61 +46,61 @@
               <div class="flex items-center gap-x-4">
                 <span class="w-32">HTML/CSS</span>
                 <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-10/12 rounded h-4 bg-blue-400"></div>
+                  <div class="slide-from-left-80 w-10/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
                 <span class="w-32">JS</span>
                 <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-10/12 rounded h-4 bg-blue-400"></div>
+                  <div class="slide-from-left-80 w-10/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
                 <span class="w-32">React</span>
                 <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-10/12 rounded h-4 bg-blue-400"></div>
+                  <div class="slide-from-left-80 w-10/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
                 <span class="w-32">Cypress</span>
                 <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-10/12 rounded h-4 bg-blue-400"></div>
+                  <div class="slide-from-left-80 w-10/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
-                <span class="w-32">TailwindCSS</span>
+                <span class="w-32">Tailwind</span>
                 <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-9/12 rounded h-4 bg-blue-400"></div>
+                  <div class="slide-from-left-75 w-9/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
                 <span class="w-32">Java Spring</span>
                 <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-9/12 rounded h-4 bg-blue-400"></div>
+                  <div class="slide-from-left-75 w-9/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
                 <span class="w-32">MySQL</span>
                 <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-9/12 rounded h-4 bg-blue-400"></div>
+                  <div class="slide-from-left-75 w-9/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
                 <span class="w-32">Python</span>
                 <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-8/12 rounded h-4 bg-blue-400"></div>
+                  <div class="slide-from-left-66 w-8/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
                 <span class="w-32">WordPress</span>
                 <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-7/12 rounded h-4 bg-blue-400"></div>
+                  <div class="slide-from-left-58 w-7/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
               <div class="flex items-center gap-x-4">
                 <span class="w-32">Bootstrap</span>
                 <div class="w-full rounded bg-gray-700 h-4">
-                  <div class="w-7/12 rounded h-4 bg-blue-400"></div>
+                  <div class="slide-from-left-58 w-7/12 rounded h-4 bg-blue-400"></div>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@
         <section id="projects">
           <h3 class="flex justify-center text-white text-3xl font-serif font-semibold pt-4 pb-8 underline underline-offset-8 decoration-4 decoration-blue-400">Projects</h3>
           <div class="flex w-full gap-x-4">
-            <div class="w-1/2 h-[386px] flex flex-col shadow-lg rounded bg-gray-700">
+            <div class="fade-in w-1/2 h-[386px] flex flex-col shadow-lg rounded bg-gray-700">
               <div class="overflow-hidden h-[150px] w-full rounded-t bg-white">
                 <img src="img/weatherapp.png" />
               </div>
@@ -124,7 +124,7 @@
                       <span>React</span>
                     </div>
                     <div class="px-4 py rounded bg-blue-500">
-                      <span>TailwindCSS</span>
+                      <span>Tailwind</span>
                     </div>
                   </div>
                   <div class="flex border-t divide-x sm:pt-4 pt-2 justify-between items-center text-center">
@@ -262,6 +262,30 @@
     </div>
   </div>
 
-</body>
+  <script>
+    // Function to check if element is in viewport
+    function isInViewport(element) {
 
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Function to add active class when element is in viewport
+    function addActiveClass() {
+      var element = document.querySelector('.fade-in');
+      if (isInViewport(element)) {
+        element.classList.add('active');
+      }
+    }
+
+    // Check if element is in viewport on page load and scroll
+    window.addEventListener('load', addActiveClass);
+    window.addEventListener('scroll', addActiveClass);
+  </script>
+</body>
 </html>
